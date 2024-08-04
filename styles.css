@@ -1,0 +1,81 @@
+/******** LAYOUT ********/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: inter;
+    background-color: powderblue;
+}
+
+.container {
+    margin: 64px;
+    margin-top: 64px;
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+/******** INTRO ********/
+
+.intro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 64px;
+}
+
+.intro .text h1 {
+    font-size: 64px;
+}
+
+.intro .text a {
+    color: black;
+    margin-right: 16px;
+    line-height: none;
+
+}
+
+.intro .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro .avatar img {
+    text-align: center;
+}
+
+/******** PROJECTS ********/
+
+.project {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    border-bottom: solid black 2px;
+    padding-bottom: 64px;
+    
+}
+.project .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.project .description p {
+    color:rgb(105,105,105);
+}
+
+
+.project .photo1 img {
+    margin-left: 100px;
+
+}
+.project .photo img{
+    padding-left: 64px;
+}
+@media (width < 1000px){
+    body{
+        background-color: blue
+    };
+}
